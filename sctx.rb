@@ -5,21 +5,21 @@
 class Sctx < Formula
   desc "Structured Context CLI — scoped context for AI agents"
   homepage "https://sctx.dev"
-  version "0.1.10"
+  version "0.1.11"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/gregology/sctx/releases/download/v0.1.10/sctx_0.1.10_darwin_amd64.tar.gz"
-      sha256 "68bb0c679d80acf0a298597bae1c839d3744c236ef4786924d7b01804d7aeb06"
+      url "https://github.com/gregology/sctx/releases/download/v0.1.11/sctx_0.1.11_darwin_amd64.tar.gz"
+      sha256 "744a86c40b7b44a677e9fffce5c559182b095f1cf511a2e8c11a8362533bb6b2"
 
       define_method(:install) do
         bin.install "sctx"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/gregology/sctx/releases/download/v0.1.10/sctx_0.1.10_darwin_arm64.tar.gz"
-      sha256 "71c07ceb214a675f02eebc8fdacc54e8fa3bbaa534e6cfd2a0fae784f9454dd3"
+      url "https://github.com/gregology/sctx/releases/download/v0.1.11/sctx_0.1.11_darwin_arm64.tar.gz"
+      sha256 "e53666837c6234a3b8c92ccfd9f28369ea371f32c11389d4fde4ed24bd60cffd"
 
       define_method(:install) do
         bin.install "sctx"
@@ -29,15 +29,15 @@ class Sctx < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gregology/sctx/releases/download/v0.1.10/sctx_0.1.10_linux_amd64.tar.gz"
-      sha256 "d8090dd5f8628e33fab65bd81ba6ed0c5a0ec799da39f8d9bc30d01b90571472"
+      url "https://github.com/gregology/sctx/releases/download/v0.1.11/sctx_0.1.11_linux_amd64.tar.gz"
+      sha256 "2a616d25b23867857073d5098c2af0eb8d5039d58b0500b00d859f02787cf02c"
       define_method(:install) do
         bin.install "sctx"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/gregology/sctx/releases/download/v0.1.10/sctx_0.1.10_linux_arm64.tar.gz"
-      sha256 "51a126fe2fdace0a4b4caadba644f1a97065b8775a9f6b4e357cf9ae438491c3"
+      url "https://github.com/gregology/sctx/releases/download/v0.1.11/sctx_0.1.11_linux_arm64.tar.gz"
+      sha256 "479be15c13faa9b911bf37b9c42c4f06b03d7b4a78b663b0ba260401f88dbd2d"
       define_method(:install) do
         bin.install "sctx"
       end
